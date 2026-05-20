@@ -1,0 +1,6 @@
+{
+  "name": "Whitmore Hales Solicitors",
+  "description": "Website of Whitmore Hales Solicitors, a prominent London-based law firm and solicitors office championing human rights, domestic dispute resolution, financial equity, and representing the voiceless across the UK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
