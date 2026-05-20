@@ -3,6 +3,12 @@ import { Shield, Scale, HeartHandshake, Gavel, Building, ArrowRight, HelpCircle,
 import { Page } from '../types';
 import { FAQS } from '../data/legalData';
 
+import heroImageSrc from '../assets/images/consultation_light_1779282113094.png';
+import handshakeImageSrc from '../assets/images/support_handshake_1779282129638.png';
+import legalDocsImageSrc from '../assets/images/legal_documents_1779282149387.png';
+import solicitorCounselImageSrc from '../assets/images/solicitor_counsel_1779282883512.png';
+import legalSignatureImageSrc from '../assets/images/legal_signature_1779282863079.png';
+
 interface HomeProps {
   onPageChange: (page: Page) => void;
   onOpenScreener: () => void;
@@ -12,9 +18,6 @@ export default function Home({ onPageChange, onOpenScreener }: HomeProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // High-comfort light-theme stock images generated via Gemini
-  const heroImageSrc = "/src/assets/images/consultation_light_1779282113094.png";
-  const handshakeImageSrc = "/src/assets/images/support_handshake_1779282129638.png";
-  const legalDocsImageSrc = "/src/assets/images/legal_documents_1779282149387.png";
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -342,7 +345,7 @@ export default function Home({ onPageChange, onOpenScreener }: HomeProps) {
             <div className="space-y-3 animate-in fade-in duration-500">
               <div className="rounded-2xl overflow-hidden border border-rose-900/15 aspect-[4/3] relative shadow-md group">
                 <img
-                  src="/src/assets/images/solicitor_counsel_1779282883512.png"
+                  src={solicitorCounselImageSrc}
                   alt="Confidential solicitor counsel meeting in bright sunlit office"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102"
@@ -358,7 +361,7 @@ export default function Home({ onPageChange, onOpenScreener }: HomeProps) {
             <div className="space-y-3 animate-in fade-in duration-500 delay-100">
               <div className="rounded-2xl overflow-hidden border border-rose-900/15 aspect-[4/3] relative shadow-md group">
                 <img
-                  src="/src/assets/images/legal_signature_1779282863079.png"
+                  src={legalSignatureImageSrc}
                   alt="Fountain pen signing secure legal protective injunction contract"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102"

@@ -1,6 +1,7 @@
 import { Page } from '../types';
 import CaseFiles from '../components/CaseFiles';
 import { Award, ArrowRight } from 'lucide-react';
+import justiceScalesSrc from '../assets/images/scales_of_justice_1779281540246.png';
 
 interface TestimonialsPageProps {
   onOpenScreener: () => void;
@@ -9,7 +10,6 @@ interface TestimonialsPageProps {
 export default function TestimonialsPage({ onOpenScreener }: TestimonialsPageProps) {
   
   // Custom-generated scales of justice photo
-  const justiceScalesSrc = "/src/assets/images/scales_of_justice_1779281540246.png";
 
   return (
     <div id="testimonials-view" className="space-y-24 pb-20 pt-28 bg-[#fbfbfa]">

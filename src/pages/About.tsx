@@ -1,5 +1,6 @@
 import { Page } from '../types';
 import { Shield, Scale, Target, Sparkles, Building, Heart, Award, Key, Lock, ArrowRight } from 'lucide-react';
+import solicitorPortraitSrc from '../assets/images/empowered_solicitor_1779281519515.png';
 
 interface AboutProps {
   onPageChange: (page: Page) => void;
@@ -9,7 +10,6 @@ interface AboutProps {
 export default function About({ onPageChange, onOpenScreener }: AboutProps) {
   
   // Custom-crafted realistic portrait generated via Gemini
-  const solicitorPortraitSrc = "/src/assets/images/empowered_solicitor_1779281519515.png";
 
   const charterPillars = [
     {
